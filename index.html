@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selamat Idul Fitri 1441 H</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<section id="particles-js">
+		<div class="text">
+			<h2 class="fade">Jembut Kecelup Santen<br>Menowo Luput Nyuwun Ngapunten</h2>
+		</div>
+		<div class="masjid"></div>
+	</section>
+
+	<script src="particles.js"></script>
+	<script src="app.js"></script>
+	<script>
+        window.onload = function() {
+            setTimeout(() => {
+                let textElement = document.querySelector("h2");
+                
+                // Buat transisi menghilang
+                textElement.classList.add("hidden");
+                
+                // Tunggu sampai transisi selesai, lalu ubah teks dan munculkan kembali
+                setTimeout(() => {
+                    textElement.innerHTML = "Selamat Idul Fitri 1446 H<br><span>Minal 'Aidin wal-Faizin</span>";
+                    textElement.classList.remove("hidden");
+                }, 1000); // Sesuai dengan durasi transisi
+            }, 3000); // Jeda 2 detik sebelum mulai transisi
+        };
+    </script>
+</body>
+</html>
